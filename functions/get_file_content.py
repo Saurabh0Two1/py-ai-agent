@@ -10,7 +10,7 @@ def get_file_content(working_directory, file_path):
     if not common_path == full_working_directory:
         raise Exception(f'Error: Cannot read "{file_path}" as it is outside the permitted working directory')
     
-    if not os.path.isfile:
+    if not os.path.isfile(full_file_path):
         raise Exception(f'Error: File not found or is not a regular file: "{file_path}"')
 
     try:
